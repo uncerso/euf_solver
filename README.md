@@ -1,12 +1,12 @@
-# Solver of theories of uninterpreted functions with equality
+# Solver for equalities and uninterpreted functions 
 
 # Requirements
-<code>g++</code> at least 7th version and <code>make</code>
+<code>g++</code> at least 7th version and <code>make</code>.
 
 # How to build
 <code>make build</code>
 
-# How to use
+# Usage
 <code>./run <<< "$formula"</code>
 
 # Examples
@@ -15,11 +15,9 @@
 <code>./run <<< 'g(g(x,y,z),z) = x & g(x,y,z) = x & g(x,z) != x'</code>
 (function overloading is available, hence <code>g</code> with <code>2</code> and <code>3</code> arguments are different functions)
 
-More examples you can see in the <code>sat_tests</code> and <code>unsat_tests</code> files
+More examples you can see in the <code>sat_tests</code> and <code>unsat_tests</code> files.
 
 # Operations
-logical 'and' is <code>&</code>
-
-equality is <code>=</code>
-
-inequality is <code>!=</code>
+* logical 'and' is <code>&</code>
+* equality is <code>=</code>
+* inequality is <code>!=</code>
