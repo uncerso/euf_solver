@@ -65,7 +65,7 @@ int main() {
 
     merge(dsu, nm.get_func_to_id_map());
 
-    for (auto [lhs, rhs] : terms.non_equalities) {
+    for (auto [lhs, rhs] : terms.inequalities) {
         if (dsu.find(lhs) == dsu.find(rhs)) {
             cout << "UNSAT\n";
             return 0;

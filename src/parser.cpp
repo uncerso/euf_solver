@@ -110,7 +110,7 @@ Terms parse(string_view formula, Numerator & numerator) {
         if (is_eq)
             terms.equalities.emplace_back(lhs, rhs);
         else
-            terms.non_equalities.emplace_back(lhs, rhs);
+            terms.inequalities.emplace_back(lhs, rhs);
 
         extractor.skip_spaces();
         if (extractor.is_end())

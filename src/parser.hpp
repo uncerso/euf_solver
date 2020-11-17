@@ -7,7 +7,7 @@
 struct Terms {
     using Term = std::pair<size_t, size_t>;
     std::vector<Term> equalities;
-    std::vector<Term> non_equalities;
+    std::vector<Term> inequalities;
 };
 
 
