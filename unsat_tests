@@ -1,0 +1,10 @@
+x != x
+x = f(x) & f(x) != x
+x = y & y = z & y != z
+a = b & f(f(a)) != f(f(b))
+f(a,b) = a & f(f(a,b),b) != a
+f(x) = g(x) & y = z & x = y & f(x) != g(z)
+g(g(x,y,z),z) = x & g(y,z) != x & g(x,y,z) = y
+g(g(g(x))) = x & g(g(g(g(g(x))))) = x & g(x) != x
+f(g(x)) = g(f(x)) & f(g(f(y))) = x & f(y) = x & g(f(x)) != x
+x = y & f(x,y) = x & f(y,x) != y
